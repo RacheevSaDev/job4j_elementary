@@ -4,8 +4,8 @@ public class Point {
     public static double distance(int x1, int y1, int x2, int y2) {
         int deltaX = x2 - x1;
         int deltaY = y2 - y1;
-        int deltaXPow2 = (int) Math.pow(deltaX,2);
-        int deltaYPow2 = (int) Math.pow(deltaY,2);
+        int deltaXPow2 = (int) Math.pow(deltaX, 2);
+        int deltaYPow2 = (int) Math.pow(deltaY, 2);
         int sumPowOfXY = deltaXPow2 + deltaYPow2;
         return Math.sqrt(sumPowOfXY);
     }
