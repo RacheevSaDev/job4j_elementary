@@ -22,4 +22,10 @@ public class MultiMaxTest {
         int result = MultiMax.max(1, 4, 5);
         assertThat(result, is(5));
     }
+
+    @Test
+    public void whenAllEqual() {
+        int result = MultiMax.max(1, 1, 1);
+        assertThat(result, is(1));
+    }
 }
