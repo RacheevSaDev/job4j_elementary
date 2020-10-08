@@ -3,9 +3,7 @@ package ru.job4j.array;
 public class Square {
     public static int[] calculate(int bound) {
         int[] rst = new int[bound];
-        /* заполнить массив через цикл элементами от 0 до bound , возведенными в квадрат */
         for (int i = 0; i < bound; i++) {
-            // без мат библиотеки, нет необходимости в лишних зависимостях
             rst[i] = i * i;
         }
         return rst;

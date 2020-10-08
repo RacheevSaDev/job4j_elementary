@@ -5,9 +5,9 @@ public class Mortgage {
         int year = 0;
         double fullCredit = amount;
         while (fullCredit > 0) {
-            fullCredit = fullCredit + fullCredit * percent / 100;       // сумма, которая набежала за этот год
-            fullCredit = fullCredit - salary;                           // сумма после уплаты платежа за год
-            year++;                                                     // прибавляем год, по окончанию
+            fullCredit = fullCredit + fullCredit * percent / 100;
+            fullCredit = fullCredit - salary;
+            year++;
         }
         return year;
     }
